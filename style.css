@@ -1,14 +1,14 @@
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 280px) {
 
 .flipConteiner {
   width: 600px;
   height: 350px;
   position: fixed;
   perspective: 1000px;
-  top: 50%; 
+  top: 45%; 
   left: 50%;
   margin-top: -150px; 
-  margin-left: -280px;
+  margin-left: -300px;
 }
 
 .cartao {
