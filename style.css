@@ -1,5 +1,9 @@
 @media screen and (min-width: 280px) {
 
+  body {
+    background-color:black;
+  }
+
 .flipConteiner {
   width: 600px;
   height: 350px;
