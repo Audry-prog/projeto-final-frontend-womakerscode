@@ -1,7 +1,7 @@
 @media screen and (min-width: 280px) {
 
   body {
-    background-image: linear-gradient(rgba(20,20,20,0.1), rgba(20,20,20,0.1)), url('./images/imagem_site.jpg');
+    background-image: url('./images/rua.jpg');
     background-size: cover;
   }
 
