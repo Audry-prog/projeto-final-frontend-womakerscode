@@ -38,7 +38,7 @@
   backface-visibility: hidden;       
   transform: translate3d(0,0,0);
   cursor: e-resize;
-  background-image: linear-gradient(rgba(20,20,20,0.8), rgba(20,20,20,0.8)), url('./images/imagem3_cartao.jpg');
+  background-image: linear-gradient(rgba(20,20,20,0.6), rgba(20,20,20,0.6)), url('./images/imagem3_cartao.jpg');
   background-size: cover;
 }
 
@@ -73,7 +73,7 @@
 .cartao .lado.frente .info {
   position: relative;
   line-height: 1;
-  color: #ee0924; 
+  color: #F8F820; 
   margin-block-end: -10px;
 }
 
