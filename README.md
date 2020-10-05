@@ -2,7 +2,7 @@
 
 Olá, o projeto é o resultado prático de tudo o que aprendi durante o meu curso com a WoMakersCode, onde encerro minha linha de aprendizado com a construção do meu cartão de visita online.
 
-<h2>Contém informações de contato e uma mini-bio no verso do cartão para que os recrutadores e entrevistadores possam ter acesso ao meu trabalho.</h2>
+<p>Contém informações de contato e uma mini-bio no verso do cartão para que os recrutadores e entrevistadores possam ter acesso ao meu trabalho.</p>
 
 Cartão de Visita <https://audry-prog.github.io/projeto-final-frontend-womakerscode/>
 
