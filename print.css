@@ -1,108 +1,112 @@
 @media screen and (min-width: 320px) {
-
   .flipConteiner {
     width: 600px;
     height: 350px;
     position: fixed;
     perspective: 1000px;
-    top: 50%; 
+    top: 50%;
     left: 50%;
-    margin-top: -150px; 
+    margin-top: -150px;
     margin-left: -280px;
-}
+    cursor: pointer;
+  }
 
-.cartao {
+  .cartao {
     position: absolute;
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transition: all 500ms linear; 
+    transition: all 500ms linear;
     box-shadow: -5px 5px 5px rgb(27, 26, 26);
-    transform: translate3d(0,0,0);
-}
+    transform: translate3d(0, 0, 0);
+  }
 
-.flipConteiner:hover .cartao {
+  .flipConteiner:hover .cartao {
     transform: rotateY(180deg);
     box-shadow: 5px 5px 5px rgb(27, 26, 26);
-}
+  }
 
-.lado {
+  .lado {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;       
-    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
     cursor: e-resize;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('./images/imagem3_cartao.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("./images/imagem3_cartao.jpg");
     background-size: cover;
-}
+    cursor: pointer;
+  }
 
-.lado.verso {
+  .lado.verso {
     transform: rotateY(180deg);
     cursor: w-resize;
-}
+    cursor: pointer;
+  }
 
-@keyframes girar {
-  0%, 40% {
-    transform: rotateY(0deg); 
+  @keyframes girar {
+    0%,
+    40% {
+      transform: rotateY(0deg);
+    }
+    50%,
+    90% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
   }
-  50%, 90% {
-    transform: rotateY(180deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
-}
 
-.cartao {
+  .cartao {
     font-family: Arial, sans-serif;
     font-size: 15px;
     color: white;
-}
+  }
 
-.cartao .lado.frente {
+  .cartao .lado.frente {
     text-align: center;
-    vertical-align: top; 
-}
+    vertical-align: top;
+  }
 
-.cartao .lado.frente .info {
+  .cartao .lado.frente .info {
     position: relative;
     line-height: 1;
-    color: #ee0924; 
+    color: #ee0924;
     margin-block-end: -10px;
-}
+  }
 
-.cartao .lado.frente img {
+  .cartao .lado.frente img {
     position: relative;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border: 2px solid white;
     margin-top: 80px;
-}
+  }
 
-.cartao.lado.frente h1 {
+  .cartao.lado.frente h1 {
     font-size: 18px;
-}
+  }
 
-.cartao.lado.frente p {
+  .cartao.lado.frente p {
     font-size: 15px;
-    transform: translate3d(0,0,0);
-    color:white;
-}
+    transform: translate3d(0, 0, 0);
+    color: white;
+  }
 
-.cartao.lado.verso {
+  .cartao.lado.verso {
     position: absolute;
     line-height: 300px;
     width: 100%;
     height: 100%;
-}
+  }
 
-.cartao .lado.verso p {
+  .cartao .lado.verso p {
     position: absolute;
     font-size: 13px;
     bottom: 1em;
     left: 1em;
   }
-
 }
